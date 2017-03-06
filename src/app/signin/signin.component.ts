@@ -38,9 +38,11 @@ export class SigninComponent implements OnInit {
     this.dataService.AuthenticateUser (email,pwd).subscribe(
                                       (res) => {this.status = res;
                                                 console.log(this.status);
+                                                let jsonFormat = JSON.parse(this.status);
+                                                if (jsonFormat.status == 'Success')
+                                                    window.location.href='https://www.stealthcommunications.ca/';
                                       }
                                     );
   }
-
 
 }
