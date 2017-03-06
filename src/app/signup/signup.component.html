@@ -1,0 +1,41 @@
+<form class="form-horizontal" [formGroup]="signupForm" (ngSubmit)="onSubmit($event)">
+  <fieldset>
+    <legend>Sign Up</legend>
+    <div class="form-group">
+      <label for="firstName" class="col-lg-2 control-label">First Name</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder="First Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="lastName" class="col-lg-2 control-label">Last Name</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="lastName" formControlName="lastName" placeholder="Last Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber" class="col-lg-2 control-label">Phone Number</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber" placeholder="Phone Number">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" formControlName="inputEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-10">
+        <input type="password" class="form-control" id="inputPassword" formControlName="inputPassword" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
